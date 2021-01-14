@@ -1,0 +1,11 @@
+/* Tablet portrait */
+@media screen and (min-width: 704px) {
+}
+
+/* Tablet landscape */
+@media screen and (min-width: 944px) {
+}
+
+/* Desktop */
+@media screen and (min-width: 1309px) {
+}
