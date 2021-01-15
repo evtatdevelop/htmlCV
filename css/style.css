@@ -1,8 +1,9 @@
 :root {
   /* Colours */
   --bg-main: #2d2e2e;
+  --bg-section: #282929;
   --font-main: #979899;
-  --colorize: #e0a80d;
+  --colorize: #ffa500;
   --lighter: #a4a5a6;
 }
 
@@ -28,7 +29,13 @@ body {
 }
 p {
   line-height: 25px;
-  font-size: 12px;
+  font-size: 13px;
+}
+a {
+  color: var(--colorize);
+}
+a:hover {
+  color: wheat;
 }
 
 .colorize {
@@ -56,8 +63,10 @@ p {
 
 .header {
   display: flex;
+  width: 100%;
   flex-direction: column;
   align-items: center;
+  height: 100vh;
 }
 .avatar {
   width: 160px;
@@ -74,14 +83,78 @@ p {
   font-weight: 300;
 }
 .position {
-  margin-top: 8px;
+  margin-top: 15px;
   font-weight: 300;
   letter-spacing: 1px;
 }
+.socials {
+  display: flex;
+  width: 114px;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.socials li {
+  display: flex;
+  width: 34px;
+  height: 34px;
+}
+.socials a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3f4040;
+  color: #717273;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+.socials a:hover {
+  border: 2px solid #3f4040;
+  background-color: var(--bg-main);
+  color: var(--colorize);
+  transition: background-color 0.3s, color 0.3s;
+}
+.socials a:focus {
+  border: 1px solid wheat;
+  background-color: var(--bg-main);
+  color: var(--colorize);
+  transition: background-color 0.3s, color 0.3s;
+}
+.header-bar {
+  width: 85%;
+  margin-top: 30px;
+  border: 1px solid #464747;
+}
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contacts li {
+  margin-top: 30px;
+  text-align: center;
+}
+.contacts a {
+  color: var(--font-main);
+}
+.contacts p:first-child {
+  margin-bottom: 5px;
+}
+.contacts a:hover,
+.contacts a:focus {
+  color: var(--colorize);
+}
 
 .section {
-  width: 300px;
-  margin-top: 24px;
-
-  outline: 1px dotted gray;
+  width: 100%;
+}
+.section-header {
+  border-top: 1px solid #464747;
+  border-bottom: 1px solid #464747;
+  padding: 30px;
+  background-color: var(--bg-section);
+}
+.section > p {
+  padding: 30px;
 }
