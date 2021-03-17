@@ -53,6 +53,10 @@ a:hover {
 .bolt {
   font-weight: 500;
 }
+.numbers {
+  font-family: 'Lato', sans-serif;
+}
+
 
 #app {
   display: flex;
@@ -165,4 +169,19 @@ a:hover {
 }
 .section > p {
   padding: 30px;
+}
+
+.expertise-list {
+  padding: 30px;
+}
+.expertise-num {
+  display: inline-block;
+  margin-right: 16px;
+}
+.expertise-list > li {
+  margin-bottom: 24px;
+}
+.expertise-list > li > p {
+  margin-left: 40px;
+  padding-top: 12px;
 }
