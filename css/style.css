@@ -5,6 +5,7 @@
   --font-main: #979899;
   --colorize: #ffa500;
   --lighter: #a4a5a6;
+  --poor: #6e6e6e;
 }
 
 .visually-hidden {
@@ -44,6 +45,9 @@ a:hover {
 .lighter {
   color: var(--lighter);
 }
+.poor {
+  color: var(--poor);
+}
 .upper {
   text-transform: uppercase;
 }
@@ -57,7 +61,9 @@ a:hover {
   font-family: 'Lato', sans-serif;
   font-weight: 700;
 }
-
+.small {
+  font-size: 10px;
+}
 
 #app {
   display: flex;
@@ -212,4 +218,70 @@ a:hover {
   height: 5px;
   background-color: var(--colorize);
   transition: all 1s;
+}
+
+/* experiance */
+/* education */
+.education-list,
+.experiance-list {
+  position: relative;
+  padding: 30px;
+}
+.education-list > li,
+.experiance-list > li {
+  margin-bottom: 24px;
+}
+.dates {
+  letter-spacing: .5px;
+  margin-bottom: 8px;
+}
+.education-list h3,
+.experiance-list h3{
+  margin-bottom: 4px;
+}
+.education-list li,
+.experiance-list li{
+  padding-left: 20px;
+  position: relative;
+  height: 200px;
+  /* border-left: 2px solid #464747; */
+}
+.education-list li::before,
+.experiance-list li::before {
+  content: '';
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: var(--colorize);
+  top: 9px;
+  left: -11px;
+}
+.education-list li::after,
+.experiance-list li::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 201px;
+  background-color: #464747;
+  left: -7px;
+  top: 25px;
+}
+.education-list::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background-color: #464747;
+  left: 15px;
+  top: 480px;
+}
+.education-list::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 20px;
+  background-color: #464747;
+  left: 22px;
+  top: 15px;
 }
