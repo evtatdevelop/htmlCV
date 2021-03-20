@@ -69,6 +69,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: start;
   margin-top: 24px;
 }
 
@@ -77,32 +78,64 @@ a:hover {
   width: 100%;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  justify-content: start;
+  /* height: 100vh; */
+}
+.header-box {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  /* outline: 1px solid green; */
+}
+.header-element {
+  position: absolute;
+  display: inline-block;
+  opacity: 0;
+  top: 20px;
+  transition: all 1s;
+}
+.box-avatar {
+  height: 160px;
 }
 .avatar {
   width: 160px;
   height: 160px;
   border-radius: 50%;
 }
-.name {
-  text-align: center;
+
+.box-first-name {
   margin-top: 28px;
+  height: 43px;
+}
+.box-last-name {
+  height: 40px;
+}
+.name {
   line-height: 44px;
   font-size: 44px;
 }
 .first-name {
   font-weight: 300;
 }
-.position {
+
+.box-position {
   margin-top: 15px;
+  height: 30px;
+}
+.position {
   font-weight: 300;
   letter-spacing: 1px;
+}
+
+.box-socials {
+  margin-top: 30px;
+  height: 34px;
 }
 .socials {
   display: flex;
   width: 114px;
   justify-content: space-between;
-  margin-top: 30px;
 }
 .socials li {
   display: flex;
@@ -132,19 +165,26 @@ a:hover {
   color: var(--colorize);
   transition: background-color 0.3s, color 0.3s;
 }
+
+.box-header-bar {
+  margin-top: 30px;
+  height: 2px;
+}
 .header-bar {
   width: 85%;
-  margin-top: 30px;
   border: 1px solid #464747;
 }
+
 .contacts {
   display: flex;
   width: 85%;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 30px;
 }
 .contacts li {
   width: 100%;
+  height: 76px;
   margin-top: 30px;
   text-align: center;
 }

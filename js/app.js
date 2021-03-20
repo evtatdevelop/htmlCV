@@ -1,7 +1,25 @@
 // (function (data) {})(data);
 
-const doc = document;
-const app = doc.querySelector('#app');
+// const doc = document;
+const app = document.querySelector('#app');
+
+/**
+ * Header animation
+ */
+function displayHeaderElement(element) {
+  element.style.opacity = '1';
+  element.style.top = '0px';
+}
+const headerElements = Array.from(document.querySelectorAll('.header-element'));
+function show(element) {
+  setTimeout(() => {
+    displayHeaderElement(element)
+    if (headerElements.length > 0) show(headerElements.shift());
+  }, 150);
+  
+}
+show(headerElements.shift())
+
 
 /**
  * Skill Progress
@@ -14,7 +32,7 @@ function autoCounter(element, current, level) {
 }
 function showSkillProgress() {
   const winHeight = document.documentElement.clientHeight;
-  const skillListLis = doc.querySelectorAll('.skills-list>li');
+  const skillListLis = document.querySelectorAll('.skills-list>li');
   skillListLis.forEach(skill => {
     const level = skill.dataset.level;
     skill.querySelector('.levelNum').innerHTML = level;
