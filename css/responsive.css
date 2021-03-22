@@ -1,11 +1,25 @@
 /* Tablet portrait */
-@media screen and (min-width: 704px) {
+@media screen and (min-width: 600px) {
+  .contacts {
+    flex-direction: row;
+  }
 }
 
 /* Tablet landscape */
-@media screen and (min-width: 944px) {
+@media screen and (min-width: 760px) {
+  .box-avatar {
+    margin-top: 30px;
+    height: 200px;
+  }
+  .avatar {
+    width: 200px;
 }
 
 /* Desktop */
-@media screen and (min-width: 1309px) {
+@media screen and (min-width: 1024px) {
 }
+
+/* Desktop */
+@media screen and (min-width: 1200px) {
+}
+

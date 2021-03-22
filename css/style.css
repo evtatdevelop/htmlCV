@@ -100,7 +100,7 @@ a:hover {
 }
 .avatar {
   width: 160px;
-  height: 160px;
+  /* height: 160px; */
   border-radius: 50%;
 }
 
@@ -157,13 +157,13 @@ a:hover {
   border: 2px solid #3f4040;
   background-color: var(--bg-main);
   color: var(--colorize);
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.4s, color 0.4s;
 }
 .socials a:focus {
   border: 1px solid wheat;
   background-color: var(--bg-main);
   color: var(--colorize);
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.4s, color 0.4s;
 }
 
 .box-header-bar {

@@ -13,12 +13,11 @@ function displayHeaderElement(element) {
 const headerElements = Array.from(document.querySelectorAll('.header-element'));
 function show(element) {
   setTimeout(() => {
-    displayHeaderElement(element)
+    displayHeaderElement(element);
     if (headerElements.length > 0) show(headerElements.shift());
-  }, 150);
-  
+  }, 100);  
 }
-show(headerElements.shift())
+show(headerElements.shift());
 
 
 /**
