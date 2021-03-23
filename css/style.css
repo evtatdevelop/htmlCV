@@ -79,7 +79,7 @@ a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: start;
-  /* height: 100vh; */
+  height: 100vh;
 }
 .header-box {
   position: relative;
@@ -110,6 +110,13 @@ a:hover {
   align-items: center;
   justify-content: start;
   /* outline: 1px dotted wheat; */
+}
+.resp-desc-info {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
 }
 .resp-desc-name {
   display: flex;
