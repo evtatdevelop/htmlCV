@@ -9,17 +9,32 @@
 @media screen and (min-width: 760px) {
   .box-avatar {
     margin-top: 30px;
-    height: 200px;
+    height: 210px;
   }
   .avatar {
-    width: 200px;
+    width: 210px;
 }
 
 /* Desktop */
 @media screen and (min-width: 1024px) {
+  .header {
+    flex-direction: row;
+    height: 100vh;
+  }
+  .resp-desc-box {
+    height: 100vh;
+    justify-content: space-around;
+  }
+  .resp-desc-ava {
+    width: 450px;
+    background-color: #2B2C2C;
+    justify-content: center;
+  }
+  .box-avatar {
+    padding-bottom: 350px;
+  }
 }
 
 /* Desktop */
 @media screen and (min-width: 1200px) {
 }
-
