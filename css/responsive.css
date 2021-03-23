@@ -75,4 +75,16 @@
   .position {
     font-size: 20px;
   }
+
+  .box-socials {
+    margin-top: 172px;
+    height: 40px;
+  }
+  .socials {
+    width: 130px;
+  } 
+  .socials li {
+    width: 40px;
+    height: 40px;
+  }
 }
