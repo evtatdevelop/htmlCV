@@ -257,6 +257,7 @@ a:hover {
 
 /* skills */
 .skills-list {
+  width: 100%;
   padding: 30px;
 }
 .skills-list > li {

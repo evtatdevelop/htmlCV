@@ -3,6 +3,10 @@
   .contacts {
     flex-direction: row;
   }
+  .intro p {
+    line-height: 30px;
+    font-size: 17px;
+  }
 }
 
 /* Tablet landscape */
@@ -16,7 +20,11 @@
   }
   .avatar {
     width: 210px;
-  }  
+  }
+  .section-header {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 
 /* Desktop */
@@ -30,7 +38,8 @@
     justify-content: space-around;
   }
   .resp-desc-ava {
-    width: 450px;
+    width: 315px;
+    flex-shrink: 0;
     background-color: #2B2C2C;
     justify-content: center;
   }
@@ -55,6 +64,30 @@
     margin-top: 122px;
     justify-content: flex-end;
     padding-right: 50px;
+  }
+
+  /* SECTIONS */
+  .section {
+    display: flex;
+  }
+  .section-header {
+    width: 315px;
+    flex-shrink: 0;
+    text-align: right;
+    border: 0;
+  }
+  .section > p {
+    flex-grow: 1;
+  }
+  .portfolio .section-header,
+  .experiance .section-header,
+  .expertise .section-header {
+    background-color: #2B2C2C;
+  }
+  .intro .section-header,
+  .skills .section-header,
+  .education .section-header {
+    background-color: #292A2A;
   }
 }
 
