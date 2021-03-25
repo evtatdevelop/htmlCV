@@ -7,6 +7,22 @@
     line-height: 30px;
     font-size: 17px;
   }
+  .expertise-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .expertise-list > li {
+    width: 40%;
+  }
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .skills-list > li {
+    width: 40%;
+  }
 }
 
 /* Tablet landscape */
@@ -24,6 +40,20 @@
   .section-header {
     padding-top: 50px;
     padding-bottom: 50px;
+  }
+  .section > p {
+    padding-top: 43px;
+    padding-bottom: 43px;
+  }
+  .skills-list,
+  .expertise-list {
+    margin-top: 19px;
+    margin-bottom: 19px;
+  }
+  .education-list,
+  .experiance-list {
+    margin-top: 14px;
+    margin-bottom: 14px;
   }
 }
 
@@ -84,10 +114,29 @@
   .expertise .section-header {
     background-color: #2B2C2C;
   }
+  .intro,
+  .skills,
+  .education {
+    background-color: #2B2C2C;
+  }
   .intro .section-header,
   .skills .section-header,
   .education .section-header {
     background-color: #292A2A;
+  }
+
+  .education-list::before {
+    height: 47px;
+    top: -14px;
+  }
+  .experiance-list::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 44px;
+    background-color: #464747;
+    left: 22px;
+    top: 480px;
   }
 }
 

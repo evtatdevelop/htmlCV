@@ -326,7 +326,7 @@ a:hover {
   width: 2px;
   height: 201px;
   background-color: #464747;
-  left: -7px;
+  left: -8px;
   top: 25px;
 }
 .education-list::after {
@@ -335,7 +335,7 @@ a:hover {
   width: 20px;
   height: 2px;
   background-color: #464747;
-  left: 15px;
+  left: 14px;
   top: 480px;
 }
 .education-list::before {
