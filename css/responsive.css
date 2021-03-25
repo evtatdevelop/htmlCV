@@ -3,25 +3,20 @@
   .contacts {
     flex-direction: row;
   }
-  .intro p {
+  .intro > p {
     line-height: 30px;
     font-size: 17px;
   }
-  .expertise-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  .expertise-list > li {
-    width: 40%;
-  }
+  .expertise-list,
   .skills-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: left;
   }
+  .expertise-list > li,
   .skills-list > li {
-    width: 40%;
+    width: 45%;
+    margin-right: 20px;
   }
 }
 
@@ -40,6 +35,7 @@
   .section-header {
     padding-top: 50px;
     padding-bottom: 50px;
+    padding-right: 50px;
   }
   .section > p {
     padding-top: 43px;
@@ -168,5 +164,42 @@
   .socials li {
     width: 40px;
     height: 40px;
+  }
+
+  /* sections */
+  .section-header {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-right: 70px;
+  }
+  .section > p {
+    padding-top: 63px;
+    padding-bottom: 63px;
+  }
+  .skills-list,
+  .expertise-list {
+    margin-top: 39px;
+    margin-bottom: 39px;
+  }
+  .education-list,
+  .experiance-list {
+    margin-top: 34px;
+    margin-bottom: 34px;
+  }
+
+  .expertise-list > li,
+  .skills-list > li {
+    width: 43%;
+    margin-right: 40px;
+    margin-bottom: 40px;
+  }
+
+  .education-list::before {
+    height: 67px;
+    top: -34px;
+  }
+  .experiance-list::after {
+      height: 64px;
+    top: 480px;
   }
 }
