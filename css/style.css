@@ -288,6 +288,7 @@ a:hover {
 .experiance-list {
   position: relative;
   padding: 30px;
+  margin-left: 10px;
 }
 .education-list > li,
 .experiance-list > li {

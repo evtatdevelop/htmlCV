@@ -32,24 +32,49 @@
   .avatar {
     width: 210px;
   }
+
   .section-header {
     padding-top: 50px;
     padding-bottom: 50px;
-    padding-right: 50px;
+    padding-left: 50px;
   }
   .section > p {
     padding-top: 43px;
     padding-bottom: 43px;
+    padding-left: 50px;
   }
   .skills-list,
   .expertise-list {
     margin-top: 19px;
     margin-bottom: 19px;
+    padding-left: 50px;
   }
   .education-list,
   .experiance-list {
     margin-top: 14px;
+    padding-left: 50px;
+  }
+  .education-list {
     margin-bottom: 14px;
+  }
+  .education-list > li,
+  .experiance-list > li {
+    display: flex;
+    justify-content: space-around;
+  }
+  .education-list::after {
+    left: 34px;
+  }
+  .education-list::before {
+    left: 42px;
+  }
+  .experiance-info {
+    width: 30%;
+    flex-shrink: 0;
+  }
+  .education-list > li > p,
+  .experiance-list > li > p {
+    width: 50%;
   }
 }
 
@@ -122,7 +147,7 @@
   }
 
   .education-list::before {
-    height: 47px;
+    height: 67px;
     top: -14px;
   }
   .experiance-list::after {
@@ -131,7 +156,7 @@
     width: 2px;
     height: 44px;
     background-color: #464747;
-    left: 22px;
+    left: 42px;
     top: 480px;
   }
 }
@@ -184,6 +209,8 @@
   .education-list,
   .experiance-list {
     margin-top: 34px;
+  }
+  .education-list {
     margin-bottom: 34px;
   }
 
