@@ -26,7 +26,7 @@ html,
 body {
   background-color: var(--bg-main);
   color: var(--font-main);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 p {
   line-height: 25px;
@@ -58,7 +58,7 @@ a:hover {
   font-weight: 500;
 }
 .numbers {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 700;
 }
 .small {
@@ -295,23 +295,23 @@ a:hover {
   margin-bottom: 24px;
 }
 .dates {
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   margin-bottom: 8px;
 }
 .education-list h3,
-.experiance-list h3{
+.experiance-list h3 {
   margin-bottom: 4px;
 }
 .education-list li,
-.experiance-list li{
+.experiance-list li {
   padding-left: 20px;
   position: relative;
-  height: 200px;
+  height: 190px;
   /* border-left: 2px solid #464747; */
 }
 .education-list li::before,
 .experiance-list li::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 9px;
   height: 9px;
@@ -322,25 +322,25 @@ a:hover {
 }
 .education-list li::after,
 .experiance-list li::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 2px;
-  height: 201px;
+  height: 191px;
   background-color: #464747;
   left: -8px;
   top: 25px;
 }
 .education-list::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 20px;
   height: 2px;
   background-color: #464747;
   left: 14px;
-  top: 480px;
+  top: 460px;
 }
 .education-list::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 2px;
   height: 20px;

@@ -18,6 +18,17 @@
     width: 45%;
     margin-right: 20px;
   }
+  .education-list li,
+  .experiance-list li {
+    height: 170px;
+  }
+  .education-list li::after,
+  .experiance-list li::after {
+    height: 171px;
+  }
+  .education-list::after {
+    top: 420px;
+  }
 }
 
 /* Tablet landscape */
@@ -61,6 +72,7 @@
   .experiance-list > li {
     display: flex;
     justify-content: space-around;
+    height: 150px;
   }
   .education-list::after {
     left: 34px;
@@ -68,6 +80,15 @@
   .education-list::before {
     left: 42px;
   }
+
+  .education-list li::after,
+  .experiance-list li::after {
+    height: 151px;
+  }
+  .education-list::after {
+    top: 380px;
+  }
+
   .experiance-info {
     width: 30%;
     flex-shrink: 0;
@@ -91,7 +112,7 @@
   .resp-desc-ava {
     width: 315px;
     flex-shrink: 0;
-    background-color: #2B2C2C;
+    background-color: #2b2c2c;
     justify-content: center;
   }
   .box-avatar {
@@ -133,32 +154,38 @@
   .portfolio .section-header,
   .experiance .section-header,
   .expertise .section-header {
-    background-color: #2B2C2C;
+    background-color: #2b2c2c;
   }
   .intro,
   .skills,
   .education {
-    background-color: #2B2C2C;
+    background-color: #2b2c2c;
   }
   .intro .section-header,
   .skills .section-header,
   .education .section-header {
-    background-color: #292A2A;
+    background-color: #292a2a;
   }
-
+  .experiance-list {
+    /* outline: 1px solid green; */
+    padding-bottom: 0;
+  }
+  .experiance-list > li:last-child {
+    margin-bottom: 0;
+  }
   .education-list::before {
     height: 67px;
-    top: -14px;
+    top: -34px;
   }
-  .experiance-list::after {
-    content: '';
+  /* .experiance-list::after {
+    content: "";
     position: absolute;
     width: 2px;
     height: 44px;
     background-color: #464747;
-    left: 42px;
-    top: 480px;
-  }
+    left: 45px;
+    top: 325px;
+  } */
 }
 
 /* Desktop */
@@ -170,10 +197,10 @@
     font-size: 70px;
   }
   .box-first-name {
-      height: 70px;
+    height: 70px;
   }
   .box-last-name {
-      height: 70px;
+    height: 70px;
   }
   .position {
     font-size: 20px;
@@ -185,7 +212,7 @@
   }
   .socials {
     width: 130px;
-  } 
+  }
   .socials li {
     width: 40px;
     height: 40px;
@@ -206,6 +233,7 @@
     margin-top: 39px;
     margin-bottom: 39px;
   }
+
   .education-list,
   .experiance-list {
     margin-top: 34px;
@@ -221,12 +249,27 @@
     margin-bottom: 40px;
   }
 
+  .education-list > li,
+  .experiance-list > li {
+    height: 130px;
+  }
   .education-list::before {
     height: 67px;
     top: -34px;
   }
   .experiance-list::after {
-      height: 64px;
-    top: 480px;
+    height: 64px;
+    top: 360px;
+  }
+
+  .education-list li::after,
+  .experiance-list li::after {
+    height: 131px;
+  }
+  .education-list::after {
+    top: 340px;
+  }
+  .experiance-list::after {
+    top: 325px;
   }
 }
