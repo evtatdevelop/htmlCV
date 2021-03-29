@@ -79,11 +79,15 @@
   }
   .education-list::before {
     left: 42px;
+    /* display: none; */
   }
 
   .education-list li::after,
   .experiance-list li::after {
     height: 151px;
+  }
+  .experiance-list li:last-child::after {
+    height: 140px;
   }
   .education-list::after {
     top: 380px;
@@ -173,9 +177,16 @@
   .experiance-list > li:last-child {
     margin-bottom: 0;
   }
+  .education-list {
+    padding-top: 0;
+  }
   .education-list::before {
-    height: 67px;
-    top: -34px;
+    /* height: 67px;
+    top: -34px; */
+    display: none;
+  }
+  .education-list::after {
+    top: 350px;
   }
   /* .experiance-list::after {
     content: "";
@@ -267,7 +278,7 @@
     height: 131px;
   }
   .education-list::after {
-    top: 340px;
+    top: 310px;
   }
   .experiance-list::after {
     top: 325px;
