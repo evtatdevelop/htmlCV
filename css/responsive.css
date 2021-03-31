@@ -162,12 +162,14 @@
   }
   .intro,
   .skills,
-  .education {
+  .education,
+  .footer {
     background-color: #2b2c2c;
   }
   .intro .section-header,
   .skills .section-header,
-  .education .section-header {
+  .education .section-header,
+  .footer .section-header {
     background-color: #292a2a;
   }
   .experiance-list {
@@ -282,5 +284,11 @@
   }
   .experiance-list::after {
     top: 325px;
+  }
+  .footer-first-name {
+    height: 70px;
+  }
+  .footer-last-name {
+    height: 70px;
   }
 }
