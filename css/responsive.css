@@ -60,6 +60,10 @@
     margin-bottom: 19px;
     padding-left: 50px;
   }
+  .resp-footer-box {
+    margin-top: 35px;
+    margin-bottom: 30px;
+  }
   .education-list,
   .experiance-list {
     margin-top: 14px;
@@ -190,6 +194,9 @@
   .education-list::after {
     top: 350px;
   }
+  .contacts li {
+    margin-top: 0;
+  }
   /* .experiance-list::after {
     content: "";
     position: absolute;
@@ -203,8 +210,21 @@
 
 /* Desktop */
 @media screen and (min-width: 1200px) {
+  .resp-desc-ava {
+    flex-grow: 1;
+  }
+  .resp-desc-right {
+    width: 905px;
+  }
+
   .box-avatar {
     padding-left: 0;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+  }
+  .avatar {
+    width: 250px;
   }
   .name {
     font-size: 70px;
@@ -236,8 +256,11 @@
     padding-top: 70px;
     padding-bottom: 70px;
     padding-right: 70px;
+    flex-grow: 1;
   }
   .section > p {
+    width: 905px;
+    flex-grow: 0;
     padding-top: 63px;
     padding-bottom: 63px;
   }
@@ -245,11 +268,15 @@
   .expertise-list {
     margin-top: 39px;
     margin-bottom: 39px;
+    width: 905px;
+    flex-grow: 0;
   }
 
   .education-list,
   .experiance-list {
     margin-top: 34px;
+    width: 905px;
+    flex-grow: 0;
   }
   .education-list {
     margin-bottom: 34px;
@@ -285,10 +312,25 @@
   .experiance-list::after {
     top: 325px;
   }
-  .footer-first-name {
+  .resp-footer-box {
+    width: 905px;
+    flex-grow: 0;
+    margin-top: 50px;
+  }
+  /* .footer-first-name {
     height: 70px;
   }
   .footer-last-name {
     height: 70px;
+  } */
+  .footer .name {
+    font-size: 44px;
+  }
+  .footer .socials li {
+    width: 34px;
+    height: 34px;
+  }
+  .footer .socials {
+    width: 114px;
   }
 }
