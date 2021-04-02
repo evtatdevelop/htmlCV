@@ -116,6 +116,9 @@
   .experiance-list > li > p {
     width: 50%;
   }
+  .portfolio__gallery {
+    margin-top: 33px;
+  }
 }
 
 /* Desktop */
@@ -195,15 +198,15 @@
     margin-bottom: 0;
   }
   .education-list {
-    padding-top: 0;
+    padding-top: 30px;
   }
   .education-list::before {
-    /* height: 67px;
-    top: -34px; */
-    display: none;
+    height: 67px;
+    top: -34px;
+    /* display: none; */
   }
   .education-list::after {
-    top: 350px;
+    top: 380px;
   }
   .contacts li {
     margin-top: 0;
@@ -318,11 +321,18 @@
     height: 131px;
   }
   .education-list::after {
-    top: 310px;
+    top: 340px;
   }
   .experiance-list::after {
     top: 325px;
   }
+
+  .portfolio__gallery {
+    margin-top: 52px;
+    width: 905px;
+    flex-grow: 0;
+  }
+
   .resp-footer-box {
     width: 905px;
     flex-grow: 0;
