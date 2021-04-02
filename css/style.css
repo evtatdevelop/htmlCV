@@ -373,6 +373,7 @@ a:hover {
 .portfolio__gallery > li:hover {
   background-size: 101%;
 }
+.portfolio__gallery > li > a:focus,
 .portfolio__gallery > li:hover a {
   opacity: 0.5;
   background-size: 101%;
@@ -401,6 +402,12 @@ a:hover {
   margin-bottom: 20px;
 }
 .portfolio__gallery > li:hover .underline {
+  width: 50px;
+}
+.portfolio__gallery > li > a:focus .portfolio__intro {
+  opacity: 1;
+}
+.portfolio__gallery > li > a:focus .underline  {
   width: 50px;
 }
 
