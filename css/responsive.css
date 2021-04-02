@@ -29,6 +29,17 @@
   .education-list::after {
     top: 420px;
   }
+  .portfolio__gallery {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .portfolio__gallery li {
+    width: 47%;
+    margin-top: 20px;
+  }
 }
 
 /* Tablet landscape */
