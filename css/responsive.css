@@ -159,6 +159,10 @@
     justify-content: flex-end;
     padding-right: 50px;
   }
+  .contacts {
+    /* outline: 1px solid green; */
+    margin-top: 30px;
+  }
 
   /* SECTIONS */
   .section {
