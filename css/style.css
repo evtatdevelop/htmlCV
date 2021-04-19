@@ -306,7 +306,7 @@ a:hover {
 .experiance-list li {
   padding-left: 20px;
   position: relative;
-  height: 190px;
+  height: 245px;
   /* border-left: 2px solid #464747; */
 }
 .education-list li::before,
@@ -325,7 +325,7 @@ a:hover {
   content: "";
   position: absolute;
   width: 2px;
-  height: 191px;
+  height: 247px;
   background-color: #464747;
   left: -8px;
   top: 25px;
@@ -337,7 +337,7 @@ a:hover {
   height: 2px;
   background-color: #464747;
   left: 14px;
-  top: 460px;
+  top: 569px;
 }
 .education-list::before {
   content: "";
@@ -407,7 +407,7 @@ a:hover {
 .portfolio__gallery > li > a:focus .portfolio__intro {
   opacity: 1;
 }
-.portfolio__gallery > li > a:focus .underline  {
+.portfolio__gallery > li > a:focus .underline {
   width: 50px;
 }
 
